@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body> 
+    <fieldset>
+    <legend>Inscription </legend>
+    <div>
+        <form name="monFormulaire" id="monFormulaire" method="post" onsubmit="return false">
+        <label for="fname">Nom et prénom *:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+    
+        <label for="lname">CIN *:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+    
+        <label for="Adress mail">Adress mail *</label>
+        <input type="mail" id="mail" name="mail" ><br>
+    <div class="niveau">
+    <label for="text">Niveau scolaire:</label>
+    
+    <input type="radio" name="niveau" value="S" checked>Secondaire</input>
+    
+    <input type="radio" name="niveau" value="U" >Universitaire</input>
+    <input type="radio" name="niveau" value="A" >Autre</input></form></div><br>
+    
+    
+        <label for="mail">Modules de formation:</label>
+        <select id="modul" name="Modules">
+          <option value="html">HTML 5</option>
+          <option value="css">CSS3</option>
+          <option value="js">Javascript</option>
+          <option value="jquery">JQuery</option>
+        </select><br>
+        <p>(*)Champs obligatoires</p>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div> 
+    </fieldset>
+</body>
+</html>
